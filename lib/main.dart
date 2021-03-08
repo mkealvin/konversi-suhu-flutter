@@ -7,6 +7,16 @@ void main() {
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   TextEditingController etInput = new TextEditingController();
+  //State
+  double inputUser = 0;
+  double kelvin = 0;
+  double fahrenheit = 0;
+  double reamur = 0;
+
+  konversi() {
+    // Set State
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -73,7 +83,7 @@ class MyApp extends StatelessWidget {
                 width: double.infinity,
                 height: 50,
                 child: RaisedButton(
-                  onPressed: () {},
+                  onPressed: konversi,
                   color: Colors.lightBlue,
                   textColor: Colors.white,
                   child: Text("Konversi"),
