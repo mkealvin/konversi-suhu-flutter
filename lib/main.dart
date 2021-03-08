@@ -6,6 +6,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+  TextEditingController etInput = new TextEditingController();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
             children: [
               TextFormField(
                 decoration: InputDecoration(hintText: "Masukan Nilai Suhu"),
+                keyboardType: TextInputType.number,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
