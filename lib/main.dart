@@ -4,10 +4,15 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   // This widget is the root of your application.
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   TextEditingController etInput = new TextEditingController();
-  //State
+
   double inputUser = 0;
   double kelvin = 0;
   double fahrenheit = 0;
@@ -15,6 +20,12 @@ class MyApp extends StatelessWidget {
 
   konversi() {
     // Set State
+    setState(() {
+      inputUser = double.parse(etInput.text);
+      reamur = 4 / 5 * inputUser;
+      fahrenheit = 9 / 5 * inputUser;
+      kelvin = inputUser + 273;
+    });
   }
 
   @override
@@ -48,7 +59,7 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(fontSize: 20),
                       ),
                       Text(
-                        "30",
+                        '$kelvin',
                         style: TextStyle(fontSize: 30),
                       ),
                     ],
@@ -60,7 +71,7 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(fontSize: 20),
                       ),
                       Text(
-                        "20",
+                        '$fahrenheit',
                         style: TextStyle(fontSize: 30),
                       ),
                     ],
@@ -72,7 +83,7 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(fontSize: 20),
                       ),
                       Text(
-                        "30",
+                        '$reamur',
                         style: TextStyle(fontSize: 30),
                       ),
                     ],
