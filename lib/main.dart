@@ -60,7 +60,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                       Text(
                         '$kelvin',
-                        style: TextStyle(fontSize: 30),
+                        style: TextStyle(fontSize: 40),
                       ),
                     ],
                   ),
@@ -72,7 +72,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                       Text(
                         '$fahrenheit',
-                        style: TextStyle(fontSize: 30),
+                        style: TextStyle(fontSize: 40),
                       ),
                     ],
                   ),
@@ -84,7 +84,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                       Text(
                         '$reamur',
-                        style: TextStyle(fontSize: 30),
+                        style: TextStyle(fontSize: 40),
                       ),
                     ],
                   ),
